@@ -1,7 +1,7 @@
 {
-  "name": "@isimsek/mf-demo",
+  "name": "@isimsek/mf-home",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --port 9001",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src --ext js,ts,tsx",
@@ -9,11 +9,6 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "coverage": "cross-env BABEL_ENV=test jest --coverage"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && concurrently npm:test npm:lint"
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
