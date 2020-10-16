@@ -1,0 +1,11 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@isimsek/mf-util": ["../util/src/isimsek-mf-util.ts"]
+    }
+  },
+  "include": ["src/**/*"]
+}
